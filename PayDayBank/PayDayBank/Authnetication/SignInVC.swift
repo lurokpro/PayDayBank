@@ -167,19 +167,21 @@ extension SignInVC: UITextFieldDelegate {
     
     @objc func signInTouchUpInside(_ sender: UIButton) {
         view.endEditing(true)
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let mainVC = storyboard.instantiateViewController(withIdentifier: "MainVCID")
-        navigationController?.pushViewController(mainVC, animated: true)
         loginButton.isEnabled = false
+        viewModel.authenticate(email: self.loginTextField.text!, password: self.passwordTextField.text!) {
+            DispatchQueue.main.async {
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let mainVC = storyboard.instantiateViewController(withIdentifier: "MainVCID")
+                self.navigationController?.pushViewController(mainVC, animated: true)
+            }
+        }
     }
     
     @objc func signUnTouchUpInside(_ sender: UIButton) {
         view.endEditing(true)
         signUpButton.isEnabled = false
-        viewModel.authenticate{
-            let signUpVC = SignUpVC()
-            self.navigationController?.pushViewController(signUpVC, animated: true)
-        }
+        let signUpVC = SignUpVC()
+        self.navigationController?.pushViewController(signUpVC, animated: true)
     }
     
     @objc func keyboardWillShow(notification: Notification) {

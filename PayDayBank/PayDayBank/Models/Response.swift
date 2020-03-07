@@ -26,4 +26,14 @@ extension Response {
             return nil
         }
     }
+    public func decodeUser<T: Codable>(_ type: T.Type) -> T? {
+        let jsonDecoder = JSONDecoder()
+        do {
+            let response = try jsonDecoder.decode(T.self, from: data)
+            return response
+        } catch let error {
+            print(error)
+            return nil
+        }
+    }
 }

@@ -99,9 +99,8 @@
 				A55991DB2412EAAB00BB1459 /* Assets.xcassets */,
 				A55991DD2412EAAB00BB1459 /* LaunchScreen.storyboard */,
 				A55991E02412EAAB00BB1459 /* Info.plist */,
-				A55991E62412EAF400BB1459 /* SignInVC.swift */,
-				A55991F02413105D00BB1459 /* SignUpVC.swift */,
 				A55991E82412F0F900BB1459 /* MainVC.swift */,
+				A559921C24140CB900BB1459 /* Authnetication */,
 				A55992122413C3D800BB1459 /* Accounts */,
 				A559920524139BAF00BB1459 /* Transactions */,
 				A559920024138EBD00BB1459 /* View Model */,
@@ -178,6 +177,15 @@
 				A55992162413C4B400BB1459 /* AccountTableViewCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		A559921C24140CB900BB1459 /* Authnetication */ = {
+			isa = PBXGroup;
+			children = (
+				A55991F02413105D00BB1459 /* SignUpVC.swift */,
+				A55991E62412EAF400BB1459 /* SignInVC.swift */,
+			);
+			path = Authnetication;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

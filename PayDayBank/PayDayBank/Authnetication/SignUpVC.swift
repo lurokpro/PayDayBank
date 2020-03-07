@@ -173,8 +173,17 @@ extension SignUpVC: UITextFieldDelegate {
     @objc func completeRegistration(_ sender: UIButton) {
         view.endEditing(true)
         if preparedBeforeRegistration() {
-            viewModel.customers {
-                self.navigationController?.popViewController(animated: true)
+            let gender = self.genderSegmentedControl.selectedSegmentIndex == 0 ? "Male" : "Female"
+            viewModel.customers(email: self.emailTextField.text!,
+                                password: self.passwordTextField.text!,
+                                firstname: self.firstnameTextField.text!,
+                                lastname: self.lastnameTextField.text!,
+                                gender: gender,
+                                phone: self.phoneNumberTextField.text!,
+                                dob: self.dobTextField.text!) {
+                                    DispatchQueue.main.async {
+                                        self.navigationController?.popViewController(animated: true)
+                                    }
             }
         }
     }
