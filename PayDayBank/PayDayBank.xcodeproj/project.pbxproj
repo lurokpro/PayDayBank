@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A55991D32412EAA900BB1459 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55991D22412EAA900BB1459 /* AppDelegate.swift */; };
+		A55991DA2412EAA900BB1459 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A55991D82412EAA900BB1459 /* Main.storyboard */; };
+		A55991DC2412EAAB00BB1459 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A55991DB2412EAAB00BB1459 /* Assets.xcassets */; };
+		A55991DF2412EAAB00BB1459 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A55991DD2412EAAB00BB1459 /* LaunchScreen.storyboard */; };
+		A55991E72412EAF400BB1459 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55991E62412EAF400BB1459 /* SignInVC.swift */; };
+		A55991E92412F0F900BB1459 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55991E82412F0F900BB1459 /* MainVC.swift */; };
+		A55991EB2413051E00BB1459 /* TransactionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55991EA2413051E00BB1459 /* TransactionsVC.swift */; };
+		A55991EF241305A200BB1459 /* AccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55991EE241305A200BB1459 /* AccountVC.swift */; };
+		A55991F12413105D00BB1459 /* SingUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55991F02413105D00BB1459 /* SingUpVC.swift */; };
+		A55991F42413831A00BB1459 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55991F32413831A00BB1459 /* Transaction.swift */; };
+		A55991F824138C2800BB1459 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55991F724138C2800BB1459 /* Networking.swift */; };
+		A55991FA24138C4900BB1459 /* PayDayBankAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55991F924138C4900BB1459 /* PayDayBankAPI.swift */; };
+		A55991FC24138D5000BB1459 /* EndpointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55991FB24138D5000BB1459 /* EndpointType.swift */; };
+		A55991FE24138E6D00BB1459 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55991FD24138E6D00BB1459 /* Response.swift */; };
+		A559920224138EEB00BB1459 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A559920124138EEB00BB1459 /* ViewModel.swift */; };
+		A55992042413920500BB1459 /* TransactionsTableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55992032413920500BB1459 /* TransactionsTableViewCellModel.swift */; };
+		A559920724139BD200BB1459 /* TransactionsVC+TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A559920624139BD200BB1459 /* TransactionsVC+TableViewDataSource.swift */; };
+		A559920A24139C0E00BB1459 /* TransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A559920924139C0E00BB1459 /* TransactionTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A55991CF2412EAA900BB1459 /* PayDayBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PayDayBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A55991D22412EAA900BB1459 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A55991D92412EAA900BB1459 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A55991DB2412EAAB00BB1459 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A55991DE2412EAAB00BB1459 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A55991E02412EAAB00BB1459 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A55991E62412EAF400BB1459 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		A55991E82412F0F900BB1459 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		A55991EA2413051E00BB1459 /* TransactionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsVC.swift; sourceTree = "<group>"; };
+		A55991EE241305A200BB1459 /* AccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountVC.swift; sourceTree = "<group>"; };
+		A55991F02413105D00BB1459 /* SingUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUpVC.swift; sourceTree = "<group>"; };
+		A55991F32413831A00BB1459 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		A55991F724138C2800BB1459 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		A55991F924138C4900BB1459 /* PayDayBankAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayDayBankAPI.swift; sourceTree = "<group>"; };
+		A55991FB24138D5000BB1459 /* EndpointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointType.swift; sourceTree = "<group>"; };
+		A55991FD24138E6D00BB1459 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		A559920124138EEB00BB1459 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		A55992032413920500BB1459 /* TransactionsTableViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsTableViewCellModel.swift; sourceTree = "<group>"; };
+		A559920624139BD200BB1459 /* TransactionsVC+TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TransactionsVC+TableViewDataSource.swift"; sourceTree = "<group>"; };
+		A559920924139C0E00BB1459 /* TransactionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A55991CC2412EAA900BB1459 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A55991C62412EAA900BB1459 = {
+			isa = PBXGroup;
+			children = (
+				A55991D12412EAA900BB1459 /* PayDayBank */,
+				A55991D02412EAA900BB1459 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A55991D02412EAA900BB1459 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A55991CF2412EAA900BB1459 /* PayDayBank.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A55991D12412EAA900BB1459 /* PayDayBank */ = {
+			isa = PBXGroup;
+			children = (
+				A55991D22412EAA900BB1459 /* AppDelegate.swift */,
+				A55991D82412EAA900BB1459 /* Main.storyboard */,
+				A55991DB2412EAAB00BB1459 /* Assets.xcassets */,
+				A55991DD2412EAAB00BB1459 /* LaunchScreen.storyboard */,
+				A55991E02412EAAB00BB1459 /* Info.plist */,
+				A55991E62412EAF400BB1459 /* SignInVC.swift */,
+				A55991F02413105D00BB1459 /* SingUpVC.swift */,
+				A55991E82412F0F900BB1459 /* MainVC.swift */,
+				A55991EE241305A200BB1459 /* AccountVC.swift */,
+				A559920524139BAF00BB1459 /* Transactions */,
+				A559920024138EBD00BB1459 /* View Model */,
+				A55991F22413830400BB1459 /* Models */,
+				A55991F624138BFA00BB1459 /* Network */,
+			);
+			path = PayDayBank;
+			sourceTree = "<group>";
+		};
+		A55991F22413830400BB1459 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A55991F32413831A00BB1459 /* Transaction.swift */,
+				A55991FD24138E6D00BB1459 /* Response.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A55991F624138BFA00BB1459 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A55991F724138C2800BB1459 /* Networking.swift */,
+				A55991F924138C4900BB1459 /* PayDayBankAPI.swift */,
+				A55991FB24138D5000BB1459 /* EndpointType.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A559920024138EBD00BB1459 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				A559920124138EEB00BB1459 /* ViewModel.swift */,
+				A55992032413920500BB1459 /* TransactionsTableViewCellModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		A559920524139BAF00BB1459 /* Transactions */ = {
+			isa = PBXGroup;
+			children = (
+				A55991EA2413051E00BB1459 /* TransactionsVC.swift */,
+				A559920624139BD200BB1459 /* TransactionsVC+TableViewDataSource.swift */,
+				A559920824139BF600BB1459 /* Cell */,
+			);
+			path = Transactions;
+			sourceTree = "<group>";
+		};
+		A559920824139BF600BB1459 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A559920924139C0E00BB1459 /* TransactionTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A55991CE2412EAA900BB1459 /* PayDayBank */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A55991E32412EAAB00BB1459 /* Build configuration list for PBXNativeTarget "PayDayBank" */;
+			buildPhases = (
+				A55991CB2412EAA900BB1459 /* Sources */,
+				A55991CC2412EAA900BB1459 /* Frameworks */,
+				A55991CD2412EAA900BB1459 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PayDayBank;
+			productName = PayDayBank;
+			productReference = A55991CF2412EAA900BB1459 /* PayDayBank.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A55991C72412EAA900BB1459 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = 7rlines;
+				TargetAttributes = {
+					A55991CE2412EAA900BB1459 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = A55991CA2412EAA900BB1459 /* Build configuration list for PBXProject "PayDayBank" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A55991C62412EAA900BB1459;
+			productRefGroup = A55991D02412EAA900BB1459 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A55991CE2412EAA900BB1459 /* PayDayBank */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A55991CD2412EAA900BB1459 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A55991DF2412EAAB00BB1459 /* LaunchScreen.storyboard in Resources */,
+				A55991DC2412EAAB00BB1459 /* Assets.xcassets in Resources */,
+				A55991DA2412EAA900BB1459 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A55991CB2412EAA900BB1459 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A55992042413920500BB1459 /* TransactionsTableViewCellModel.swift in Sources */,
+				A559920A24139C0E00BB1459 /* TransactionTableViewCell.swift in Sources */,
+				A55991FC24138D5000BB1459 /* EndpointType.swift in Sources */,
+				A55991F42413831A00BB1459 /* Transaction.swift in Sources */,
+				A559920224138EEB00BB1459 /* ViewModel.swift in Sources */,
+				A559920724139BD200BB1459 /* TransactionsVC+TableViewDataSource.swift in Sources */,
+				A55991E72412EAF400BB1459 /* SignInVC.swift in Sources */,
+				A55991EF241305A200BB1459 /* AccountVC.swift in Sources */,
+				A55991FA24138C4900BB1459 /* PayDayBankAPI.swift in Sources */,
+				A55991F824138C2800BB1459 /* Networking.swift in Sources */,
+				A55991EB2413051E00BB1459 /* TransactionsVC.swift in Sources */,
+				A55991F12413105D00BB1459 /* SingUpVC.swift in Sources */,
+				A55991E92412F0F900BB1459 /* MainVC.swift in Sources */,
+				A55991FE24138E6D00BB1459 /* Response.swift in Sources */,
+				A55991D32412EAA900BB1459 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A55991D82412EAA900BB1459 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A55991D92412EAA900BB1459 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A55991DD2412EAAB00BB1459 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A55991DE2412EAAB00BB1459 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A55991E12412EAAB00BB1459 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A55991E22412EAAB00BB1459 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A55991E42412EAAB00BB1459 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BTYLKBJ9MA;
+				INFOPLIST_FILE = PayDayBank/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.7rlines.PayDayBank;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A55991E52412EAAB00BB1459 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BTYLKBJ9MA;
+				INFOPLIST_FILE = PayDayBank/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.7rlines.PayDayBank;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A55991CA2412EAA900BB1459 /* Build configuration list for PBXProject "PayDayBank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A55991E12412EAAB00BB1459 /* Debug */,
+				A55991E22412EAAB00BB1459 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A55991E32412EAAB00BB1459 /* Build configuration list for PBXNativeTarget "PayDayBank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A55991E42412EAAB00BB1459 /* Debug */,
+				A55991E52412EAAB00BB1459 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A55991C72412EAA900BB1459 /* Project object */;
+}
