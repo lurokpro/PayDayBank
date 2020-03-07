@@ -154,7 +154,7 @@ extension SignInVC: UITextFieldDelegate {
         if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
             print("notification: Keyboard will show")
             if self.view.frame.origin.y == 0 {
-                self.view.frame.origin.y -= keyboardSize.height + containerView.frame.origin.y
+                self.view.frame.origin.y -= keyboardSize.height - containerView.frame.size.height*1.2
             }
         }
     }
@@ -162,7 +162,7 @@ extension SignInVC: UITextFieldDelegate {
     @objc func keyboardWillHide(notification: Notification) {
         if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
             if self.view.frame.origin.y != 0 {
-                self.view.frame.origin.y += keyboardSize.height - containerView.frame.origin.y
+                self.view.frame.origin.y += keyboardSize.height - containerView.frame.size.height*1.2
             }
         }
     }
