@@ -1,5 +1,5 @@
 //
-//  TransactionsVC.swift
+//  AccountsVC.swift
 //  PayDayBank
 //
 //  Created by Сергей Мирошниченко on 07.03.2020.
@@ -8,23 +8,23 @@
 
 import UIKit
 
-class TransactionsVC: UITableViewController {
+class AccountsVC: UITableViewController {
     
-    let cellID = "TransactionCellID"
+    let accountCellID = "AccountCellID"
     public let viewModel = ViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.backgroundColor = .white
-        tableView.register(TransactionTableViewCell.self, forCellReuseIdentifier: cellID)
+        tableView.register(AccountTableViewCell.self, forCellReuseIdentifier: accountCellID)
         tableView.rowHeight = UITableView.automaticDimension
         
-        viewModel.getTransactions {
+        viewModel.getAccounts(completion: {
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }
-        }
+        })
     }
     
 }

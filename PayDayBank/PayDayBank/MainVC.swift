@@ -13,7 +13,7 @@ class MainVC: UIViewController {
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var tabBar: UITabBar!
     let transactionsVC = TransactionsVC()
-    let accountVC = AccountVC()
+    let accountsVC = AccountsVC()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,13 +41,15 @@ class MainVC: UIViewController {
             transactionsVC.view.frame = containerView.bounds
             transactionsVC.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
             transactionsVC.didMove(toParent: self)
+            self.navigationItem.title = "Transactions"
             break
         default:
-            addChild(accountVC)
-            containerView.addSubview(accountVC.view)
-            accountVC.view.frame = containerView.bounds
-            accountVC.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-            accountVC.didMove(toParent: self)
+            addChild(accountsVC)
+            containerView.addSubview(accountsVC.view)
+            accountsVC.view.frame = containerView.bounds
+            accountsVC.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+            accountsVC.didMove(toParent: self)
+            self.navigationItem.title = "Accounts"
             break
         }
     }

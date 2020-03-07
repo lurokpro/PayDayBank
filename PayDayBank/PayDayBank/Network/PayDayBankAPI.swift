@@ -15,6 +15,11 @@ enum PayDayBankAPI {
     case transactions
 }
 
+enum HttpMethod {
+    case get
+    case post
+}
+
 extension PayDayBankAPI: EndpointType {
     var baseURL: URL {
         return URL(string: "http://localhost:3000")!

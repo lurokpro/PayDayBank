@@ -14,8 +14,12 @@ struct Networking {
                                         type: T.Type,
                                         completion: ((_ response: Array<T>) -> Void)?) {
         let urlString = endpoint.baseURL.appendingPathComponent(endpoint.path).absoluteString.removingPercentEncoding
-        guard let urlRequest = URL(string: urlString ?? "") else { return }
-        print(urlRequest)
+        let urlRequest = URLRequest(url: URL(string: urlString!)!)
+//        if let params = params {
+//            let  jsonData = try? JSONSerialization.data(withJSONObject: params, options: .prettyPrinted)
+//            urlRequest.setValue("application/json", forHTTPHeaderField: "Content-Type")
+//            urlRequest.httpBody = jsonData
+//        }
         let urlSession = URLSession.shared.dataTask(with: urlRequest) { (data, urlResponse, error) in
             if let error = error {
                 print("URL: \(error)")

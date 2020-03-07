@@ -10,6 +10,8 @@ import UIKit
 
 class SignInVC: UIViewController {
     
+    public let viewModel = ViewModel()
+    
     let layerView : UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -24,8 +26,8 @@ class SignInVC: UIViewController {
         return view
     }()
     
-    private let loginTextField : UITextField = {
-        let textField = UITextField()
+    private let loginTextField : UITextFieldPadding = {
+        let textField = UITextFieldPadding()
         textField.translatesAutoresizingMaskIntoConstraints = false
         textField.textAlignment = .left
         textField.layer.borderWidth = 1
@@ -35,12 +37,13 @@ class SignInVC: UIViewController {
         return textField
     }()
     
-    private let passwordTextField : UITextField = {
-        let textField = UITextField()
+    private let passwordTextField : UITextFieldPadding = {
+        let textField = UITextFieldPadding()
         textField.translatesAutoresizingMaskIntoConstraints = false
         textField.layer.borderWidth = 1
         textField.layer.borderColor = UIColor.white.cgColor
         textField.layer.cornerRadius = 8
+        textField.isSecureTextEntry = true
         textField.placeholder = "Enter your password"
         return textField
     }()
@@ -53,6 +56,18 @@ class SignInVC: UIViewController {
         button.titleLabel?.textAlignment = .center
         button.backgroundColor = .white
         button.addTarget(self, action: #selector(signInTouchUpInside), for: .touchUpInside)
+        button.layer.cornerRadius = 8
+        return button
+    }()
+    
+    private let signUpButton : UIButton = {
+        let button = UIButton()
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.setTitle("Sign up", for: .normal)
+        button.setTitleColor(UIColor(red: 101/255, green: 191/255, blue: 255/255, alpha: 1), for: .normal)
+        button.titleLabel?.textAlignment = .center
+        button.backgroundColor = .white
+        button.addTarget(self, action: #selector(signUnTouchUpInside), for: .touchUpInside)
         button.layer.cornerRadius = 8
         return button
     }()
@@ -78,6 +93,8 @@ class SignInVC: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.setNavigationBarHidden(true, animated: true)
+        loginButton.isEnabled = true
+        signUpButton.isEnabled = true
         setupViews()
     }
     
@@ -93,7 +110,7 @@ class SignInVC: UIViewController {
         containerView.centerXAnchor.constraint(equalTo: layerView.centerXAnchor).isActive = true
         containerView.leftAnchor.constraint(equalTo: layerView.leftAnchor, constant: 16).isActive = true
         containerView.rightAnchor.constraint(equalTo: layerView.rightAnchor, constant: -16).isActive = true
-        containerView.heightAnchor.constraint(equalToConstant: 152).isActive = true
+        containerView.heightAnchor.constraint(equalToConstant: 208).isActive = true
         
         containerView.addSubview(loginTextField)
         loginTextField.centerXAnchor.constraint(equalTo: containerView.centerXAnchor).isActive = true
@@ -112,7 +129,13 @@ class SignInVC: UIViewController {
         loginButton.centerXAnchor.constraint(equalTo: containerView.centerXAnchor).isActive = true
         loginButton.widthAnchor.constraint(equalTo: containerView.widthAnchor).isActive = true
         loginButton.topAnchor.constraint(equalTo: passwordTextField.bottomAnchor, constant: 16).isActive = true
-        loginButton.bottomAnchor.constraint(equalTo: containerView.bottomAnchor).isActive = true
+        loginButton.heightAnchor.constraint(equalToConstant: 40).isActive = true
+        
+        containerView.addSubview(signUpButton)
+        signUpButton.centerXAnchor.constraint(equalTo: containerView.centerXAnchor).isActive = true
+        signUpButton.widthAnchor.constraint(equalTo: containerView.widthAnchor).isActive = true
+        signUpButton.topAnchor.constraint(equalTo: loginButton.bottomAnchor, constant: 16).isActive = true
+        signUpButton.bottomAnchor.constraint(equalTo: containerView.bottomAnchor).isActive = true
         
         layerView.addSubview(logoImageView)
         logoImageView.leftAnchor.constraint(equalTo: layerView.leftAnchor, constant: 16).isActive = true
@@ -150,6 +173,15 @@ extension SignInVC: UITextFieldDelegate {
         loginButton.isEnabled = false
     }
     
+    @objc func signUnTouchUpInside(_ sender: UIButton) {
+        view.endEditing(true)
+        signUpButton.isEnabled = false
+        viewModel.authenticate{
+            let signUpVC = SignUpVC()
+            self.navigationController?.pushViewController(signUpVC, animated: true)
+        }
+    }
+    
     @objc func keyboardWillShow(notification: Notification) {
         if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
             print("notification: Keyboard will show")
@@ -168,27 +200,19 @@ extension SignInVC: UITextFieldDelegate {
     }
 }
 
-//class UITextFieldPadding : UITextField {
-//
-//    let padding = UIEdgeInsets(top: 0, left: 8, bottom: 0, right: 8)
-//
-//    override init(frame: CGRect) {
-//        super.init(frame: frame)
-//    }
-//
-//    required init?(coder aDecoder: NSCoder) {
-//        super.init(coder: aDecoder)
-//    }
-//
-//    override func textRect(forBounds bounds: CGRect) -> CGRect {
-//        return bounds.inset(by: padding)
-//    }
-//
-//    override func placeholderRect(forBounds bounds: CGRect) -> CGRect {
-//        return bounds.inset(by: padding)
-//    }
-//
-//    override func editingRect(forBounds bounds: CGRect) -> CGRect {
-//        return bounds.inset(by: padding)
-//    }
-//}
+class UITextFieldPadding : UITextField {
+
+    let padding = UIEdgeInsets(top: 0, left: 8, bottom: 0, right: 8)
+
+    override func textRect(forBounds bounds: CGRect) -> CGRect {
+        return bounds.inset(by: padding)
+    }
+
+    override func placeholderRect(forBounds bounds: CGRect) -> CGRect {
+        return bounds.inset(by: padding)
+    }
+
+    override func editingRect(forBounds bounds: CGRect) -> CGRect {
+        return bounds.inset(by: padding)
+    }
+}

@@ -14,8 +14,8 @@
 		A55991E72412EAF400BB1459 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55991E62412EAF400BB1459 /* SignInVC.swift */; };
 		A55991E92412F0F900BB1459 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55991E82412F0F900BB1459 /* MainVC.swift */; };
 		A55991EB2413051E00BB1459 /* TransactionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55991EA2413051E00BB1459 /* TransactionsVC.swift */; };
-		A55991EF241305A200BB1459 /* AccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55991EE241305A200BB1459 /* AccountVC.swift */; };
-		A55991F12413105D00BB1459 /* SingUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55991F02413105D00BB1459 /* SingUpVC.swift */; };
+		A55991EF241305A200BB1459 /* AccountsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55991EE241305A200BB1459 /* AccountsVC.swift */; };
+		A55991F12413105D00BB1459 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55991F02413105D00BB1459 /* SignUpVC.swift */; };
 		A55991F42413831A00BB1459 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55991F32413831A00BB1459 /* Transaction.swift */; };
 		A55991F824138C2800BB1459 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55991F724138C2800BB1459 /* Networking.swift */; };
 		A55991FA24138C4900BB1459 /* PayDayBankAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55991F924138C4900BB1459 /* PayDayBankAPI.swift */; };
@@ -25,6 +25,13 @@
 		A55992042413920500BB1459 /* TransactionsTableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55992032413920500BB1459 /* TransactionsTableViewCellModel.swift */; };
 		A559920724139BD200BB1459 /* TransactionsVC+TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A559920624139BD200BB1459 /* TransactionsVC+TableViewDataSource.swift */; };
 		A559920A24139C0E00BB1459 /* TransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A559920924139C0E00BB1459 /* TransactionTableViewCell.swift */; };
+		A559920C2413BF4F00BB1459 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = A559920B2413BF4F00BB1459 /* Account.swift */; };
+		A559920E2413C02000BB1459 /* TransactionsVC + TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A559920D2413C02000BB1459 /* TransactionsVC + TableViewDelegate.swift */; };
+		A55992102413C1CC00BB1459 /* AccountTableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A559920F2413C1CC00BB1459 /* AccountTableViewCellModel.swift */; };
+		A55992142413C40600BB1459 /* AccountsVC+TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55992132413C40600BB1459 /* AccountsVC+TableViewDataSource.swift */; };
+		A55992172413C4B400BB1459 /* AccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55992162413C4B400BB1459 /* AccountTableViewCell.swift */; };
+		A55992192413DE6000BB1459 /* AccountsVC+TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55992182413DE6000BB1459 /* AccountsVC+TableViewDelegate.swift */; };
+		A559921B2413E0FE00BB1459 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A559921A2413E0FE00BB1459 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,8 +44,8 @@
 		A55991E62412EAF400BB1459 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		A55991E82412F0F900BB1459 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		A55991EA2413051E00BB1459 /* TransactionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsVC.swift; sourceTree = "<group>"; };
-		A55991EE241305A200BB1459 /* AccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountVC.swift; sourceTree = "<group>"; };
-		A55991F02413105D00BB1459 /* SingUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUpVC.swift; sourceTree = "<group>"; };
+		A55991EE241305A200BB1459 /* AccountsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsVC.swift; sourceTree = "<group>"; };
+		A55991F02413105D00BB1459 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		A55991F32413831A00BB1459 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		A55991F724138C2800BB1459 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		A55991F924138C4900BB1459 /* PayDayBankAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayDayBankAPI.swift; sourceTree = "<group>"; };
@@ -48,6 +55,13 @@
 		A55992032413920500BB1459 /* TransactionsTableViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsTableViewCellModel.swift; sourceTree = "<group>"; };
 		A559920624139BD200BB1459 /* TransactionsVC+TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TransactionsVC+TableViewDataSource.swift"; sourceTree = "<group>"; };
 		A559920924139C0E00BB1459 /* TransactionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTableViewCell.swift; sourceTree = "<group>"; };
+		A559920B2413BF4F00BB1459 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		A559920D2413C02000BB1459 /* TransactionsVC + TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TransactionsVC + TableViewDelegate.swift"; sourceTree = "<group>"; };
+		A559920F2413C1CC00BB1459 /* AccountTableViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTableViewCellModel.swift; sourceTree = "<group>"; };
+		A55992132413C40600BB1459 /* AccountsVC+TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccountsVC+TableViewDataSource.swift"; sourceTree = "<group>"; };
+		A55992162413C4B400BB1459 /* AccountTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTableViewCell.swift; sourceTree = "<group>"; };
+		A55992182413DE6000BB1459 /* AccountsVC+TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccountsVC+TableViewDelegate.swift"; sourceTree = "<group>"; };
+		A559921A2413E0FE00BB1459 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,9 +100,9 @@
 				A55991DD2412EAAB00BB1459 /* LaunchScreen.storyboard */,
 				A55991E02412EAAB00BB1459 /* Info.plist */,
 				A55991E62412EAF400BB1459 /* SignInVC.swift */,
-				A55991F02413105D00BB1459 /* SingUpVC.swift */,
+				A55991F02413105D00BB1459 /* SignUpVC.swift */,
 				A55991E82412F0F900BB1459 /* MainVC.swift */,
-				A55991EE241305A200BB1459 /* AccountVC.swift */,
+				A55992122413C3D800BB1459 /* Accounts */,
 				A559920524139BAF00BB1459 /* Transactions */,
 				A559920024138EBD00BB1459 /* View Model */,
 				A55991F22413830400BB1459 /* Models */,
@@ -101,6 +115,8 @@
 			isa = PBXGroup;
 			children = (
 				A55991F32413831A00BB1459 /* Transaction.swift */,
+				A559920B2413BF4F00BB1459 /* Account.swift */,
+				A559921A2413E0FE00BB1459 /* User.swift */,
 				A55991FD24138E6D00BB1459 /* Response.swift */,
 			);
 			path = Models;
@@ -121,6 +137,7 @@
 			children = (
 				A559920124138EEB00BB1459 /* ViewModel.swift */,
 				A55992032413920500BB1459 /* TransactionsTableViewCellModel.swift */,
+				A559920F2413C1CC00BB1459 /* AccountTableViewCellModel.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -130,6 +147,7 @@
 			children = (
 				A55991EA2413051E00BB1459 /* TransactionsVC.swift */,
 				A559920624139BD200BB1459 /* TransactionsVC+TableViewDataSource.swift */,
+				A559920D2413C02000BB1459 /* TransactionsVC + TableViewDelegate.swift */,
 				A559920824139BF600BB1459 /* Cell */,
 			);
 			path = Transactions;
@@ -139,6 +157,25 @@
 			isa = PBXGroup;
 			children = (
 				A559920924139C0E00BB1459 /* TransactionTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		A55992122413C3D800BB1459 /* Accounts */ = {
+			isa = PBXGroup;
+			children = (
+				A55991EE241305A200BB1459 /* AccountsVC.swift */,
+				A55992132413C40600BB1459 /* AccountsVC+TableViewDataSource.swift */,
+				A55992182413DE6000BB1459 /* AccountsVC+TableViewDelegate.swift */,
+				A55992152413C49D00BB1459 /* Cell */,
+			);
+			path = Accounts;
+			sourceTree = "<group>";
+		};
+		A55992152413C49D00BB1459 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A55992162413C4B400BB1459 /* AccountTableViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -219,16 +256,23 @@
 				A55991FC24138D5000BB1459 /* EndpointType.swift in Sources */,
 				A55991F42413831A00BB1459 /* Transaction.swift in Sources */,
 				A559920224138EEB00BB1459 /* ViewModel.swift in Sources */,
+				A559920C2413BF4F00BB1459 /* Account.swift in Sources */,
 				A559920724139BD200BB1459 /* TransactionsVC+TableViewDataSource.swift in Sources */,
+				A55992142413C40600BB1459 /* AccountsVC+TableViewDataSource.swift in Sources */,
 				A55991E72412EAF400BB1459 /* SignInVC.swift in Sources */,
-				A55991EF241305A200BB1459 /* AccountVC.swift in Sources */,
+				A55991EF241305A200BB1459 /* AccountsVC.swift in Sources */,
+				A559921B2413E0FE00BB1459 /* User.swift in Sources */,
 				A55991FA24138C4900BB1459 /* PayDayBankAPI.swift in Sources */,
 				A55991F824138C2800BB1459 /* Networking.swift in Sources */,
 				A55991EB2413051E00BB1459 /* TransactionsVC.swift in Sources */,
-				A55991F12413105D00BB1459 /* SingUpVC.swift in Sources */,
+				A55992172413C4B400BB1459 /* AccountTableViewCell.swift in Sources */,
+				A55991F12413105D00BB1459 /* SignUpVC.swift in Sources */,
 				A55991E92412F0F900BB1459 /* MainVC.swift in Sources */,
 				A55991FE24138E6D00BB1459 /* Response.swift in Sources */,
+				A55992102413C1CC00BB1459 /* AccountTableViewCellModel.swift in Sources */,
 				A55991D32412EAA900BB1459 /* AppDelegate.swift in Sources */,
+				A55992192413DE6000BB1459 /* AccountsVC+TableViewDelegate.swift in Sources */,
+				A559920E2413C02000BB1459 /* TransactionsVC + TableViewDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
